@@ -113,8 +113,10 @@ unsetopt share_history
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 # nnn export
+export EDITOR="vim"
 export NNN_PLUG='p:preview-tui;d:diffs;v:imgview;'
 export NNN_FIFO=/tmp/nnn.fifo
+export NNN_OPENER=$HOME/.config/nnn/plugins/nuke
 alias nnn="nnn -cC"
 
 # Vim
