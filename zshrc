@@ -129,6 +129,7 @@ alias ip="ip -c"
 alias docker-id="docker ps --format 'table {{.ID}}\t{{.Names}}'"
 alias docker-ls="docker container ls"
 alias docker-net="docker ps --format 'table {{ .ID }}\t{{ .Names }}\t{{ json .Networks }}\t{{.Ports}}'"
+alias docker-whois="docker inspect --format='{{.Config.Image}}'"
 
 # Set XDG Base Directory Specification
 export XDG_DATA_HOME=$HOME/.local/share
