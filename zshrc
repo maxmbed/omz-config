@@ -131,5 +131,9 @@ alias docker-ls="docker container ls"
 alias docker-net="docker ps --format 'table {{ .ID }}\t{{ .Names }}\t{{ json .Networks }}\t{{.Ports}}'"
 alias docker-whois="docker inspect --format='{{.Config.Image}}'"
 
+# Quick search
+alias find-file="find -iname"
+alias find-dir="find -type d -iname"
+
 # Set XDG Base Directory Specification
 export XDG_DATA_HOME=$HOME/.local/share
