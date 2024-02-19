@@ -112,6 +112,9 @@ unsetopt share_history
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+# Custom bin path
+export PATH=~/opt/bin:$PATH
+
 # nnn export
 export EDITOR="vim"
 export NNN_PLUG='p:preview-tui;d:diffs;v:imgview;'
