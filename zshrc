@@ -88,6 +88,10 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 unsetopt share_history
 
+function virtualenv_info {
+    [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') '
+}
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -114,7 +118,7 @@ unsetopt share_history
 #
 # Custom bin path
 export PATH=~/opt/bin:$PATH
-
+export PATH=~/.local/bin:$PATH
 # nnn export
 export EDITOR="vim"
 export NNN_PLUG='p:preview-tui;d:diffs;v:imgview;'
@@ -140,3 +144,8 @@ alias find-dir="find -type d -iname"
 
 # Set XDG Base Directory Specification
 export XDG_DATA_HOME=$HOME/.local/share
+
+# Node-js
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
