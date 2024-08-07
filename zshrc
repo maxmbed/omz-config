@@ -129,6 +129,8 @@ alias nnn="nnn -cC"
 # Vim
 alias vim-ide="vim --cmd 'let ide=1'"
 
+# Git
+alias git-log="log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'"
 # Network
 alias ip="ip -c"
 
